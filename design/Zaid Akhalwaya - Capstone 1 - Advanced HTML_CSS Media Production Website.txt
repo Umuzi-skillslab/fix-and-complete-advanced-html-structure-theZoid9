@@ -1,0 +1,62 @@
+﻿HTML Review and Improvements 
+
+
+All four HTML files show consistent foundational problems starting with index.html :
+
+
+* No styling, only HTML can be seen
+* Missing metadata, No charset, No viewpoint
+* Not using semantic elements, e.g., <header> <nav> <main> <footer>
+* Navigation links should usually be in a list- group related links correctly
+* Class naming improvements
+
+
+
+
+Each file contains specific problems:
+
+
+Media.html
+
+
+* First video missing controls and fallback
+* The second video is missing entirely
+* The audio element is missing completely
+* Iframe missing completely
+* Missing figure/figcaption semantic markup
+    
+    W3C Errors:
+* Img element missing alt attributes
+
+
+
+
+Contact.html
+
+
+* Missing: Labels, proper input types (email, tel), validation attributes
+* Missing: Radio buttons, checkboxes, select/dropdown, date/number inputs
+* Missing: Fieldset for grouping
+
+
+About.html
+
+
+* Flexbox layout should be here, but using basic divs
+* Missing third services
+* Grid gallery missing - Basic layout
+
+
+  W3C Errors:
+* Img element missing alt attributes 
+
+
+
+
+Improvements: All four HTML files
+
+* Apply a consistent semantic layout across all pages(header, nav, main, footer)
+* Create a head structure with full metadata for responsiveness
+* Fix navigation link 
+* Improve accessibility by using alt, labels, and proper HTML elements
+* Cool animations (burger button for mobile and hover effect for flex box content)
