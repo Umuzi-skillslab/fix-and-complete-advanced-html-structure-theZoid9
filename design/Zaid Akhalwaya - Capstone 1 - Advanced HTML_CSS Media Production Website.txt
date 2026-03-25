@@ -16,6 +16,18 @@ All four HTML files show consistent foundational problems starting with index.ht
 Each file contains specific problems:
 
 
+About.html
+
+
+* Flexbox layout should be here, but using basic divs
+* Missing third services
+* Grid gallery missing - Basic layout
+
+
+  W3C Errors:
+* Img element missing alt attributes 
+
+
 Media.html
 
 
@@ -33,22 +45,10 @@ Media.html
 
 Contact.html
 
-
 * Missing: Labels, proper input types (email, tel), validation attributes
 * Missing: Radio buttons, checkboxes, select/dropdown, date/number inputs
 * Missing: Fieldset for grouping
 
-
-About.html
-
-
-* Flexbox layout should be here, but using basic divs
-* Missing third services
-* Grid gallery missing - Basic layout
-
-
-  W3C Errors:
-* Img element missing alt attributes 
 
 
 
