@@ -63,17 +63,83 @@ img {
 /* Video and audio styling missing */
 
 /* Form styling incomplete */
-form input {
-    display: block;
-    margin: 10px 0;
-    padding: 5px;
+.form-main {
+    display: flex;
+    justify-content: center; 
+    padding: 2rem;         
+    border: 3px solid rgb(24, 233, 24)
+}
+
+.form-heading {
+    display: flex;
+    justify-content: center;
+    border: 3px solid rebeccapurple;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;     /* center all divs horizontally */
+    max-width: 500px;  
+    width: 100%;            
+    background-color: #f9f9f9;
+    padding: 2rem;          
+    border-radius: 8px;     
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+     border: 3px solid rgb(255, 57, 8);
+}
+
+form fieldset {
+    border: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+label {
+    margin-bottom: 1.3rem;
+
+    font-weight: 500;
+}
+
+form div {
+    margin-bottom: 1rem;
+}
+
+.radio-options {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.radio-options input[type="radio"] {
+    margin:0; 
+}
+
+textarea {
+    min-height: 80px;
+    resize: vertical; /* allow user to resize vertically */
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
 }
 
 form button {
-    padding: 10px 20px;
-    background-color: blue;
-    color: white;
+    padding: 0.7rem 1.5rem;
     border: none;
+    border-radius: 4px;
+    background-color: #0077cc;
+    color: white;
+    cursor: pointer;
 }
 
 .bottom {
