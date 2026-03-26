@@ -15,17 +15,22 @@ body {
 
 .top h1 {
     margin: 0;
+    text-align: center;
 }
 
 /* Navigation - not using flexbox, poor styling */
-.nav {
+.nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
     margin-top: 10px;
 }
 
 .nav a {
-    color: white;
-    margin-right: 15px;
     text-decoration: none;
+    color: #555;
+    margin: 0 10px;
+    font-weight: bold;
 }
 
 /* Missing: pseudo-classes for hover effects */
@@ -36,7 +41,7 @@ body {
     padding: 60px 20px;
     background-color: lightgray;
     /* Poor colour contrast */
-    color: #ddd;
+    color: #494949;
 }
 
 /* Missing: flexbox layouts (requirement: 2+ flexbox layouts) */
@@ -72,10 +77,16 @@ form button {
 }
 
 .bottom {
+    display: flex;
     background-color: #333;
     color: white;
     padding: 20px;
-    text-align: center;
+    justify-content: center;
+}
+
+.bottom p{
+    margin: 0 10px;
+    
 }
 
 /* Missing: responsive design with media queries */
