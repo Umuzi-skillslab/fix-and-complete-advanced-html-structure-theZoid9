@@ -7,35 +7,35 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
+    <header class="top">
         <h1>Contact Us</h1>
     </header>
-    <nav class="contact-nav">
+    <nav class="nav">
         <ul >
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="media.html">Media</a></li>
+            <li><a href="index.html">Home</a> | </li>
+            <li><a href="about.html">About</a> | </li>
+            <li><a href="media.html">Media</a> | </li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
     
-    <main>
-        <div class="form-heading">
-            <h2>Get In Touch</h2>
-        </div>
-        <h2>Get In Touch</h2>
+    <main class="form-main">
         <form action="#" method="POST">
-                 <div class="name-input">
+            <fieldset>
+            <div class="form-heading">
+                <h2>Get In Touch</h2>
+             </div>            
+                 <div class="input">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Your Name" required>
                 </div>
 
-                <div class="email-input">
+                <div class="input">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="your@email.com" required>
                 </div>
 
-                <div class="phone-input">
+                <div class="input">
                     <label for="phone">Phone</label>
                     <input type="tel" id="phone" name="phone" placeholder="08212345678">
                 </div>
@@ -56,6 +56,9 @@
                     <label for="message">Message</label>
                     <textarea id="message" name="message" placeholder="Your message here..."></textarea>
                 </div>
+
+            </fieldset>
+
 
             <button type="submit">Submit</button>
         </form>
