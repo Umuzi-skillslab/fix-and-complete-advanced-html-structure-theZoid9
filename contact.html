@@ -1,37 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="top">
+    <header>
         <h1>Contact Us</h1>
-        <div class="nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="media.html">Media</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </div>
+    </header>
+    <nav class="contact-nav">
+        <ul >
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
     
-    <div>
+    <main>
+        <div class="form-heading">
+            <h2>Get In Touch</h2>
+        </div>
         <h2>Get In Touch</h2>
-        
-        <!-- Form with multiple errors -->
-        <form>
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="Phone">
-            <textarea placeholder="Message"></textarea>
-            
-            <!-- Missing: labels, proper input types (email, tel), validation attributes -->
-            <!-- Missing: radio buttons, checkboxes, select/dropdown, date/number inputs -->
-            <!-- Missing: fieldset for grouping -->
-            
-            <button>Submit</button>
+        <form action="#" method="POST">
+                 <div class="name-input">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+
+                <div class="email-input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                </div>
+
+                <div class="phone-input">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="08212345678">
+                </div>
+
+                <div class="gender-input">
+                    <label>Gender</label>
+                    <div class="radio-options">
+                        <label>
+                            <input type="radio" name="gender" value="male"> Male
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="female"> Female
+                        </label>
+                    </div>
+                </div>
+
+                <div class="message-input">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your message here..."></textarea>
+                </div>
+
+            <button type="submit">Submit</button>
         </form>
-    </div>
+    </main>
     
     <div class="bottom">
         <p>Email: contact@mediaproduction.com</p>
