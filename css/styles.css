@@ -4,9 +4,10 @@
     padding: 0;
 }
 
-body {
+html,body {
     font-family: Arial;
     color: #333;
+
 }
 
 .top {
@@ -25,9 +26,9 @@ body {
     list-style: none;
     display: flex;
     justify-content: center;
-  
-
-     background-color: #dbdbdb;
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: #dbdbdb;
    
 }
 
@@ -43,18 +44,21 @@ body {
 /* Missing: combination selectors */
 /* Missing: advanced selector types (attribute, child, etc) */
 
+
 .hero {
     padding: 60px 20px;
     background-color: lightgray;
     /* Poor colour contrast */
     color: #494949;
+    border: 2px solid rgb(71, 250, 0);
 }
 
 /* Missing: flexbox layouts (requirement: 2+ flexbox layouts) */
 /* Missing: CSS Grid layout (requirement: 1+ grid layout) */
 
 .content {
-    padding: 40px 20px;
+    padding: 240px 20px;
+    border: 2px solid firebrick;
 }
 
 /* Missing: text effects (shadows, gradients) */
