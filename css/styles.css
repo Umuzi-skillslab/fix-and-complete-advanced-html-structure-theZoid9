@@ -1,15 +1,17 @@
 /* Basic styles with multiple errors and missing features */
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     font-family: Arial;
-    margin: 0;
-    padding: 0;
     color: #333;
 }
 
 .top {
     background-color: #1a1a1a;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 20px;
 }
 
@@ -23,7 +25,10 @@ body {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+  
+
+     background-color: #dbdbdb;
+   
 }
 
 .nav a {
@@ -31,6 +36,7 @@ body {
     color: #555;
     margin: 0 10px;
     font-weight: bold;
+   
 }
 
 /* Missing: pseudo-classes for hover effects */
@@ -57,7 +63,7 @@ body {
 /* Missing: keyframe animations */
 
 img {
-    max-width: 100%;
+    max-width: 50%;
 }
 
 /* Video and audio styling missing */
