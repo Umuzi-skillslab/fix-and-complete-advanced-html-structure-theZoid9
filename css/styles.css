@@ -27,7 +27,7 @@ html,body {
     display: flex;
     justify-content: center;
     padding: 20px;
-    margin-bottom: 50px;
+
     background-color: #dbdbdb;
    
 }
@@ -168,8 +168,11 @@ form button {
     display: flex;
     background-color: #333;
     color: white;
-    padding: 20px;
+    padding: 30px;
     justify-content: center;
+    margin-bottom: 0px;
+    border: 3px solid rebeccapurple;
+    
 }
 
 .bottom p{
