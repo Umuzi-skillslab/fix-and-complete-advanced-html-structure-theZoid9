@@ -67,14 +67,24 @@ img {
     display: flex;
     justify-content: center; 
     padding: 2rem;         
-    border: 3px solid rgb(24, 233, 24)
+    
 }
 
 .form-heading {
     display: flex;
     justify-content: center;
-    border: 3px solid rebeccapurple;
+      margin-top: 0;
+    border-bottom: 1px solid #555555; /* underline color and thickness */
+    padding-bottom: 0.5rem;    
 }
+
+
+.input, .gender-input, .message-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;  
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -85,7 +95,6 @@ form {
     padding: 2rem;          
     border-radius: 8px;     
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
-     border: 3px solid rgb(255, 57, 8);
 }
 
 form fieldset {
@@ -96,8 +105,7 @@ form fieldset {
 }
 
 label {
-    margin-bottom: 1.3rem;
-
+    margin-bottom: 1rem;
     font-weight: 500;
 }
 
@@ -115,9 +123,10 @@ form div {
 }
 
 textarea {
-    min-height: 80px;
-    resize: vertical; /* allow user to resize vertically */
+    min-height: 60px;
+    resize: vertical;
 }
+
 
 form input, form textarea {
     padding: 0.5rem;
@@ -134,10 +143,13 @@ form textarea {
 }
 
 form button {
+    /*
+    form btn can hover orange and nav
+    */
     padding: 0.7rem 1.5rem;
     border: none;
     border-radius: 4px;
-    background-color: #0077cc;
+    background-color: #3f3f3f;
     color: white;
     cursor: pointer;
 }
