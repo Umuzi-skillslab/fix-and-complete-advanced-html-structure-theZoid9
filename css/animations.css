@@ -20,7 +20,7 @@
 
 /*transition animations*/
 .portfolio-grid img {
-    transition: transform 0.3s ease;
+    transition: transform 1.0s ease;
 }
 
 .service-section article {
@@ -29,6 +29,10 @@
 
 .service-section article:hover {
     transform: scale(1.05);
+}
+
+.portfolio-grid img:hover {
+    transform: scale(1.3);
 }
 
 
