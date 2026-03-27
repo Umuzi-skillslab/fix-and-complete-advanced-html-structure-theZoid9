@@ -17,9 +17,6 @@
 }
 
 
-
-
-
 /*Hover animations*/
 .service-section article:hover,
 .portfolio-grid img:hover {
@@ -48,7 +45,29 @@
     animation: float 3s ease-in-out infinite;
 }
 
+.hat {
+    height: 100px;
+    animation: hatBounce 1s ease-out forwards;
+    opacity: 0;
+}
 
+@keyframes hatBounce {
+    0% {
+        transform: translateY(-150px) scale(0.5) rotate(-30deg);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(20px) scale(1.2) rotate(10deg);
+        opacity: 1;
+    }
+    70% {
+        transform: translateY(-10px) scale(0.95) rotate(-5deg);
+    }
+    100% {
+        transform: translateY(0) scale(1) rotate(0deg);
+          opacity: 1;
+    }
+}
 /*fadeSlideUp animations*/
 
 .location h2 {

@@ -12,11 +12,26 @@
 
     .top {
         padding: 20px;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
     }
 
     .top h1 {
+
+        display: flex;
+        justify-content: center;
         margin: 0;
-        text-align: center;
+        align-items: center;
+        padding: 10px;
+        border:2px solid rgb(116, 116, 116);
+    }
+
+    .top img{
+        padding: 2px;
+        width: 80px;
+       
+
     }
 
     .nav ul{
