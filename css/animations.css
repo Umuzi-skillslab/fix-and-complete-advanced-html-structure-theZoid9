@@ -37,15 +37,20 @@ button:hover {
 
 .video-section h3,
 .audio-section h3,
-.img-section h3 {
+.img-section h3,
+.audio-sample h2 {
     animation: float 3s ease-in-out infinite;
 }
+
+
 
 .hat {
     height: 100px;
     animation: hatBounce 1s ease-out forwards;
     opacity: 0;
 }
+
+
 
 @keyframes hatBounce {
     0% {
@@ -83,8 +88,8 @@ button:hover {
 .team-section h2 {
     opacity: 0;
     transform: translateY(30px);
-    animation: fadeSlideUp 2s ease forwards;
-    animation-delay: 0.6s;  
+    animation: fadeSlideUp 1s ease forwards;
+    animation-delay: 0.1s;  
 }
 
 .service-section h2 {
@@ -101,6 +106,12 @@ button:hover {
     animation-delay: 1.0s; 
 }
 
+.video-showcase h2{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlideUp 2s ease forwards;
+    animation-delay: 0.02s; 
+}
 /* Keyframes */
 
     @keyframes fadeSlideUp {
