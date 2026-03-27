@@ -96,26 +96,47 @@
     }
 
 
+/*Service Section */
     .service-section {
         display: flex;
         flex-direction: column;
         padding: 60px 20px;
-
     }
 
+
+    .service-section {
+        display: flex;
+        flex-direction: column;
+        padding: 60px 20px;
+    }
+
+ 
     .service {
         display: flex;
         justify-content: center;
     }
 
-    .service-section article {
-        text-align: center;
+    /* Cards THE BRAIN OF BACKGROUND*/
+    .service-card {
+        position: relative;
+        overflow: hidden;
         border-radius: 8px;
         padding: 20px;
         margin: 10px;
-        flex: 1 1 150px; 
-        
+        flex: 1 1 150px;
+        text-align: center;
     }
+
+    /* Video background THE BRAIN OF BACKGROUND**/
+    .service-card video {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+    }
+
 
     .video-section,
     .audio-section,

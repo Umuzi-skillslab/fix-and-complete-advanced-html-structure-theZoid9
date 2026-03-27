@@ -66,17 +66,16 @@ html,body {
     background-size: cover;
     background-position: center;  
     background-repeat: no-repeat; 
-    
     padding: 40px; 
     color: white; 
 }
 
 
 .content {
-    background-color: white;
+
     padding: 40px 20px;
     border-radius: 8px;
-    border: 1px solid #E0E0E0;
+ 
 }
 
 .content h2 {
@@ -96,28 +95,37 @@ html,body {
     color: var(--bg);
 }
 
-
-.service-section {
-    background-color: var(--bg);
+/* Dark overlay for readability */
+.service-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 0;
 }
 
-.service-section article {
-    background-color: var(--secondary);
-    color: var(--text);
-    border: 1px solid #c0c0c0;
+/* Text styling */
+.service-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
+.service-card p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
 
 .video-section h3,
 .audio-section h3,
 .img-section h3 {
     color: var(--accent);
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 .video-section p,
 .audio-section p,
 .img-section p {
-    color: var(--text-light);
+    color: var(--bg-secondary);
 }
 
 form {    
