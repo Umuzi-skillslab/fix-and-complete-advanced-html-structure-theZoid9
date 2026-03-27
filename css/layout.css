@@ -376,15 +376,9 @@
         padding: 2rem;
     }
    
-    .form-heading {
-        display: flex;
-        justify-content: center;
-        margin-top: 0;
-        border-bottom: 1px solid #555555; 
-        padding-bottom: 0.5rem;    
-    }
+ 
 
-    .input, .gender-input, .message-input {
+    .input, .gender-input, .message-input, .service-input {
         display: flex;
         flex-direction: column;
         margin-bottom: 1rem;  

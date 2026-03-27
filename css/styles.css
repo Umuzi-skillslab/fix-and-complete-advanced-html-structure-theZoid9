@@ -135,6 +135,13 @@ form {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
 }
 
+.form-heading {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        border-bottom: 1px solid #000000; 
+        padding-bottom: 0.5rem;    
+    }
 
 form input, form textarea {
     border: 1px solid #000000;
