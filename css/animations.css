@@ -16,11 +16,6 @@
     text-decoration:underline;
 }
 
-/* index animation */
-@keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
-}
 
 .hero h2,
 .content h2 {
@@ -57,3 +52,35 @@
     transition: 0.3s ease;
     box-shadow: 0 28px 20px rgba(0,0,0,0.15);
 }
+
+
+.location h2 {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlideUp 2s ease forwards;
+    animation-delay: 0.7s;  /* small delay for smooth effect */
+}
+
+.top h1{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlideUp 2s ease forwards;
+    animation-delay: 0.7s;  /* small delay for smooth effect */
+}
+
+
+
+/* Keyframes */
+
+    @keyframes fadeSlideUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* index animation */
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-5px); }
+    }
