@@ -8,6 +8,7 @@
 }
 
 
+
 /*Hover animations*/
 .service-section article:hover,
 .portfolio-grid img:hover {
@@ -15,6 +16,21 @@
     transition: 0.3s ease;
     box-shadow: 0 28px 20px rgba(0,0,0,0.15);
 }
+
+
+/*transition animations*/
+.portfolio-grid img {
+    transition: transform 0.3s ease;
+}
+
+.service-section article {
+    transition: transform 1.5s ease;
+}
+
+.service-section article:hover {
+    transform: scale(1.05);
+}
+
 
 .client figure:hover {
     transform: translateY(-5px);
