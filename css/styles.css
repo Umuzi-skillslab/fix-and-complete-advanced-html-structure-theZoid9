@@ -1,3 +1,13 @@
+:root {
+    --bg: #F8F9FA;
+    --primary: #1A1A1A;
+    --secondary: #2F2F2F;
+    --accent: #D72638;
+    --accent-alt: #3A86FF;
+    --text: #333333;
+    --text-light: #777777;
+}
+
 /* Basic styles with multiple errors and missing features */
 * {
     margin: 0;
@@ -6,13 +16,13 @@
 
 html,body {
     font-family: Arial;
-    color: #333;
-
+    background-color: var(--bg);
+    color: var(--text);
 }
 
 .top {
-    background-color: #1a1a1a;
-    color: rgb(255, 255, 255);
+ background-color: var(--primary);
+    color: white;
     padding: 20px;
 }
 
@@ -21,7 +31,6 @@ html,body {
     text-align: center;
 }
 
-/* Navigation - not using flexbox, poor styling */
 .nav ul{
     list-style: none;
     display: flex;
@@ -34,37 +43,51 @@ html,body {
 
 .nav a {
     text-decoration: none;
-    color: #555;
+        color: var(--accent);
     margin: 0 10px;
-    font-weight: bold;
-   
+    font-weight: bold;   
 }
 
-/* Missing: pseudo-classes for hover effects */
-/* Missing: combination selectors */
-/* Missing: advanced selector types (attribute, child, etc) */
-
+.hero,
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical center */
+    align-items: center;     /* horizontal center */
+    text-align: center;      /* center the text itself */
+}
 
 .hero {
+    background-color: var(--primary);
+    color: white;
     padding: 60px 20px;
-    background-color: lightgray;
-    /* Poor colour contrast */
-    color: #494949;
-    border: 2px solid rgb(71, 250, 0);
+    border-radius: 8px;
 }
 
-/* Missing: flexbox layouts (requirement: 2+ flexbox layouts) */
-/* Missing: CSS Grid layout (requirement: 1+ grid layout) */
+.hero h2 {
+    color: var(--accent);
+}
+.hero p {
+    color: #CCCCCC;
+}
+
 
 .content {
-    padding: 240px 20px;
-    border: 2px solid firebrick;
+    background-color: white;
+    padding: 40px 20px;
+    border-radius: 8px;
+    border: 1px solid #E0E0E0;
 }
 
-/* Missing: text effects (shadows, gradients) */
-/* Missing: transforms */
-/* Missing: transitions */
-/* Missing: keyframe animations */
+.content h2 {
+    color: var(--primary);
+}
+
+.content p {
+    color: var(--text-light);
+}
+
+
 
 img {
     max-width: 50%;
@@ -84,7 +107,7 @@ img {
     display: flex;
     justify-content: center;
       margin-top: 0;
-    border-bottom: 1px solid #555555; /* underline color and thickness */
+    border-bottom: 1px solid #555555; 
     padding-bottom: 0.5rem;    
 }
 
@@ -98,7 +121,7 @@ img {
 form {
     display: flex;
     flex-direction: column;
-    align-items: center;     /* center all divs horizontally */
+    align-items: center; 
     max-width: 500px;  
     width: 100%;            
     background-color: #f9f9f9;
@@ -153,9 +176,7 @@ form textarea {
 }
 
 form button {
-    /*
-    form btn can hover orange and nav
-    */
+
     padding: 0.7rem 1.5rem;
     border: none;
     border-radius: 4px;
@@ -166,13 +187,12 @@ form button {
 
 .bottom {
     display: flex;
-    background-color: #333;
+    background-color: var(--primary);
     color: white;
     padding: 30px;
     justify-content: center;
     margin-bottom: 0px;
-    border: 3px solid rebeccapurple;
-    
+   
 }
 
 .bottom p{

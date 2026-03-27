@@ -1,0 +1,23 @@
+/* Missing: pseudo-classes for hover effects */
+/* Missing: combination selectors */
+/* Missing: advanced selector types (attribute, child, etc) */
+
+/* Missing: text effects (shadows, gradients) */
+/* Missing: transforms */
+/* Missing: transitions */
+/* Missing: keyframe animations */
+
+
+
+
+
+/* index animation */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.hero h2,
+.content h2 {
+    animation: float 3s ease-in-out infinite;
+}
