@@ -1,47 +1,41 @@
-# Media Production Website Starter Code
-
-This is the starter codebase for your media production website project. The code is approximately 70% complete but contains errors, omissions, and areas that need significant improvement.
-
-## What's Included
-
-- `index.html` - Home page (incomplete, semantic issues)
-- `about.html` - About/Services page (incomplete, missing flexbox/grid layouts)
-- `media.html` - Media gallery page (incomplete, missing media elements)
-- `contact.html` - Contact page (incomplete form with validation issues)
-- `css/styles.css` - Stylesheet (incomplete, missing advanced features)
-- `images/` folder - Placeholder folder for your images
-- `media/` folder - Placeholder folder for video/audio files
-
-## Your Task
-
-Review the provided code carefully and:
-1. Identify and fix all HTML and CSS errors
-2. Complete all missing advanced requirements
-3. Add required media elements (video, audio, iframe)
-4. Implement flexbox and CSS Grid layouts
-5. Add CSS effects, transforms, transitions, and animations
-6. Expand selector usage and add pseudo-classes
-7. Improve code quality and organisation
-8. Test across multiple browsers and validate all code
-
-## Getting Started
-
-1. Review all HTML and CSS files thoroughly
-2. Run HTML through W3C Validator to identify errors
-3. Run CSS through W3C CSS Validator
-4. Identify missing advanced features (flexbox, grid, animations, etc.)
-5. Test in multiple browsers
-6. Fix all issues and complete missing requirements
-
-## Notes
-
-- You will need to add your own video and audio files to the `media/` folder
-- You will need to add images to the `images/` folder
-- The starter code intentionally has issues for you to discover and fix
-- Advanced features like flexbox, grid, animations are missing or incomplete
-- Refer to the project requirements document for all specifications
-
-Good luck!
+## Media Production Company Website
 
 
-Pushing to main  instead of feedback
+## Overview
+The Media Production Company Website is a fully responsive, multi-page site designed to showcase professional media services, including video production, audio recording, photography, and multimedia solutions.
+
+
+## Issues Found
+- Missing semantic HTML tags (<header>, <main>, <section>, <footer>, <figure>, <figcaption>).
+- Lack of proper metadata for SEO and accessibility.
+- Poor responsive layout; navigation and content did not adapt to mobile screens.
+- Form validation missing or incomplete.
+- Media elements (video, audio) lacked fallback text and controls.
+- CSS lacked structure and modularity; no variables, pseudo-classes, or transitions.
+- No animations or hover effects; cards and buttons were static.
+
+## Fixes and Implementations
+
+
+## flexbox Layouts
+
+
+## CSS Grid Layouts
+
+## Selectors and Pseudo-Classes
+
+## Animations, Effects, Transforms, Transitions
+
+## Accessibility Improvements
+
+## Cross-Browser Compatibility
+
+
+## Local Viewing Instructions
+
+1. Clone the repository:
+
+- git clone  https://github.com/Umuzi-skillslab/fix-and-complete-advanced-html-structure-theZoid9 
+2. Navigate to the project folder
+
+## Reflection
