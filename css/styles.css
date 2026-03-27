@@ -52,23 +52,23 @@ html,body {
 }
 
 .hero {
-    background-image: url("/media/pexels-cottonbro-6883807.jpg"); /* adjust path */
-    background-size: cover;        /* fills the whole area */
-    background-position: center;  /* keeps image centered */
-    background-repeat: no-repeat; /* prevents tiling */
+    background-image: url("/images/pexels-cottonbro-6883807.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     
-    padding: 40px; /* so text isn’t squashed */
-    color: white;  /* make text readable */
+    padding: 40px; 
+    color: white; 
 }
 
 .team-section {
-    background-image: url("/media/pexels-besnik-musliu-54875896-7819014.jpg"); /* adjust path */
-    background-size: cover;        /* fills the whole area */
-    background-position: center;  /* keeps image centered */
-    background-repeat: no-repeat; /* prevents tiling */
+    background-image: url("/images/pexels-besnik-musliu-54875896-7819014.jpg");
+    background-size: cover;
+    background-position: center;  
+    background-repeat: no-repeat; 
     
-    padding: 40px; /* so text isn’t squashed */
-    color: white;  /* make text readable */
+    padding: 40px; 
+    color: white; 
 }
 
 
