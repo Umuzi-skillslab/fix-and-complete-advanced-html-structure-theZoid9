@@ -1,23 +1,32 @@
 
-/* Missing: flexbox layouts (requirement: 2+ flexbox layouts) */
-/* Missing: CSS Grid layout (requirement: 1+ grid layout) */
-
-
-.homepage {
-    min-height: 100vh;           
-    display: flex;
-    flex-direction: column;   
+/* general layout */
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/**** Main homepage(index.html) Layout ****/
+.homepage {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
 .hero {
-    flex: 2;                     
+    flex: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;    
     align-items: center;          
+    text-align: center;
     padding: 10px 15px;
-       
+    margin: 0;
 }
 
 .content {
@@ -30,6 +39,8 @@
     padding: 10px;
 }
 
+
+/*****  about.html Layout ********/
 
 .team-section {
     padding: 60px 20px;
@@ -120,3 +131,69 @@
             font-size: 1.8rem;
             text-transform: uppercase;
         }
+
+
+
+/* Media Section */
+/* Video & Audio Sections */
+/* General section styling */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Section titles */
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Video section*/
+
+.video-showcase {
+    text-align: center; /* centers the heading */
+    padding: 20px 0;
+}
+
+.video-showcase h2 {
+    margin-bottom: 20px;
+}
+
+.video-showcase video {
+    display: inline-block; 
+    width: 45%;          
+    margin: 0 10px;        
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Audio section*/
+.audio-sample {
+    display: block;
+    text-align: center;     
+    padding: 20px 0;
+    background-color: #555;
+}
+
+.audio-sample h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+    
+}
+
+.audio-sample audio {
+    display: block;           
+    margin: 0 auto 10px;     
+    width: 60%;               
+    max-width: 500px;         
+}
+
+.audio-sample p {
+    margin: 0;              
+    font-size: 1rem;
+    color: #e0e0e0;
+}
