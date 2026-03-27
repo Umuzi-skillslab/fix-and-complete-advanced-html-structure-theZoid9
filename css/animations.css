@@ -9,7 +9,12 @@
 
 
 
+/* nav animation */
 
+.nav a:hover{
+    color: black;
+    text-decoration:underline;
+}
 
 /* index animation */
 @keyframes float {
