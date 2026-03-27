@@ -51,6 +51,26 @@ html,body {
     color: #CCCCCC;
 }
 
+.hero {
+    background-image: url("/media/pexels-cottonbro-6883807.jpg"); /* adjust path */
+    background-size: cover;        /* fills the whole area */
+    background-position: center;  /* keeps image centered */
+    background-repeat: no-repeat; /* prevents tiling */
+    
+    padding: 40px; /* so text isn’t squashed */
+    color: white;  /* make text readable */
+}
+
+.team-section {
+    background-image: url("/media/pexels-besnik-musliu-54875896-7819014.jpg"); /* adjust path */
+    background-size: cover;        /* fills the whole area */
+    background-position: center;  /* keeps image centered */
+    background-repeat: no-repeat; /* prevents tiling */
+    
+    padding: 40px; /* so text isn’t squashed */
+    color: white;  /* make text readable */
+}
+
 
 .content {
     background-color: white;
@@ -69,9 +89,11 @@ html,body {
 
 
 /* about.html styles *****/  
+.team-section h2 {
+    color: var(--accent);
+}
 .team-section {
-    background-color: var(--bg-secondary);
-    color: var(--text);
+    color: var(--bg);
 }
 
 
