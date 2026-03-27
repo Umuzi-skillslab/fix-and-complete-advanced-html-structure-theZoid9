@@ -31,6 +31,11 @@
     border-color: #ccc;
 }
 
+button:hover {
+    background-color: #a61b2a; 
+    transform: scale(1.05);
+}
+
 
 
 /*bounce animations*/
