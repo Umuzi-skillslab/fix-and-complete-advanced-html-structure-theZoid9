@@ -6,9 +6,8 @@
     --accent-alt: #3A86FF;
     --text: #333333;
     --text-light: #777777;
-     --bg-secondary: #ECECEC;
+    --bg-secondary: #ECECEC;
 }
-
 
 * {
     margin: 0;
@@ -22,46 +21,27 @@ html,body {
 }
 
 .top {
- background-color: var(--primary);
+    background-color: var(--primary);
     color: white;
-    padding: 20px;
+
 }
 
-.top h1 {
-    margin: 0;
-    text-align: center;
-}
 
 .nav ul{
     list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
     background-color: #dbdbdb;
-   
 }
 
 .nav a {
     text-decoration: none;
     color: var(--accent);
-    margin: 0 10px;
     font-weight: bold;   
 }
 
-.hero,
-.content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* vertical center */
-    align-items: center;     /* horizontal center */
-    text-align: center;      /* center the text itself */
-}
 
 .hero {
     background-color: var(--primary);
     color: white;
-    padding: 60px 20px;
-    border-radius: 8px;
 }
 
 .hero h2 {
@@ -88,29 +68,12 @@ html,body {
 }
 
 
- /* Image Styling */
-.portfolio-grid img {
-        max-width: 250px; 
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        border-radius: 4px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        cursor: pointer;
- }
-
-/* Hover Effect */
-.portfolio-grid img:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-    }
-
-    
+/* about.html styles *****/  
 .team-section {
     background-color: var(--bg-secondary);
     color: var(--text);
 }
+
 
 .service-section {
     background-color: var(--bg);
@@ -135,204 +98,31 @@ html,body {
     color: var(--text-light);
 }
 
-/* Video and audio styling missing */
-
-
-.form-main {
-    display: flex;
-    justify-content: center; 
-    padding: 2rem;         
-    
-}
-
-.form-heading {
-    display: flex;
-    justify-content: center;
-      margin-top: 0;
-    border-bottom: 1px solid #555555; 
-    padding-bottom: 0.5rem;    
-}
-
-
-.input, .gender-input, .message-input {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;  
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    max-width: 500px;  
-    width: 100%;            
+form {    
     background-color: #f9f9f9;
     padding: 2rem;          
     border-radius: 8px;     
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
 }
 
-form fieldset {
-    border: none;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-label {
-    margin-bottom: 1rem;
-    font-weight: 500;
-}
-
-form div {
-    margin-bottom: 1rem;
-}
-
-.radio-options {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
-.radio-options input[type="radio"] {
-    margin:0; 
-}
-
-textarea {
-    min-height: 60px;
-    resize: vertical;
-}
-
 
 form input, form textarea {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     border-radius: 4px;
     box-sizing: border-box;
 }
 
-form input[type="text"],
-form input[type="email"],
-form input[type="tel"],
-form textarea {
-    width: 100%;
-}
+
 
 form button {
-
-    padding: 0.7rem 1.5rem;
     border: none;
     border-radius: 4px;
     background-color: #3f3f3f;
     color: white;
-    cursor: pointer;
 }
 
 .bottom {
-    display: flex;
     background-color: var(--primary);
     color: white;
-    padding: 30px;
-    justify-content: center;
-    margin-bottom: 0px;
-   
 }
 
-.bottom p{
-    margin: 0 10px;
-    
-}
-
-
-/* Root color palette */
-:root {
-    --bg: #F8F9FA;
-    --primary: #1A1A1A;
-    --secondary: #2F2F2F;
-    --accent: #D72638;
-    --accent-alt: #3A86FF;
-    --text: #333333;
-    --text-light: #777777;
-    --bg-secondary: #ECECEC;
-}
-
-/* Homepage */
-.hero {
-    color: var(--primary);
-}
-
-.hero h2 {
-    color: var(--accent);
-}
-
-.hero p {
-    color: var(--text-light);
-}
-
-.content {
-    color: var(--text);
-}
-
-.content h2 {
-    color: var(--primary);
-}
-
-.content p {
-    color: var(--text-light);
-}
-
-/* Team Section */
-.team-section {
-    background-color: var(--bg-secondary);
-    color: var(--text);
-}
-
-/* Service Section */
-.service-section {
-    background-color: var(--bg);
-}
-
-.service-section article {
-    background-color: var(--secondary);
-    color: var(--text);
-}
-
-.video-section h3,
-.audio-section h3,
-.img-section h3 {
-    color: var(--accent);
-}
-
-.video-section p,
-.audio-section p,
-.img-section p {
-    color: var(--text-light);
-}
-
-/* Portfolio Section */
-.portfolio-section {
-    background-color: var(--bg);
-}
-
-.portfolio-grid h2 {
-    color: var(--accent);
-}
-
-/* Client Section */
-.client figcaption {
-    color: var(--text);
-}
-
-/* Missing: responsive design with media queries */
-/* Missing: advanced layout techniques */
-/* Code quality issues: poor naming, no comments, inconsistent spacing */
-/* Only using 3 selector types (element, class) - needs 5+ */
-/* No pseudo-classes used - needs 5+ */
-
-.video-showcase {
-   background-color: var(--bg-secondary);
-}
-
-.video-showcase  h2{
-    color: #000000;
-
-}
