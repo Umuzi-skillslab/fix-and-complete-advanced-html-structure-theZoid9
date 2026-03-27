@@ -6,9 +6,10 @@
     --accent-alt: #3A86FF;
     --text: #333333;
     --text-light: #777777;
+     --bg-secondary: #ECECEC;
 }
 
-/* Basic styles with multiple errors and missing features */
+
 * {
     margin: 0;
     padding: 0;
@@ -87,14 +88,56 @@ html,body {
 }
 
 
+ /* Image Styling */
+.portfolio-grid img {
+        max-width: 250px; 
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 4px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+ }
 
-img {
-    max-width: 50%;
+/* Hover Effect */
+.portfolio-grid img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    }
+
+    
+.team-section {
+    background-color: var(--bg-secondary);
+    color: var(--text);
+}
+
+.service-section {
+    background-color: var(--bg);
+}
+
+.service-section article {
+    background-color: var(--secondary);
+    color: var(--text);
+    border: 1px solid #c0c0c0;
+}
+
+
+.video-section h3,
+.audio-section h3,
+.img-section h3 {
+    color: var(--accent);
+}
+
+.video-section p,
+.audio-section p,
+.img-section p {
+    color: var(--text-light);
 }
 
 /* Video and audio styling missing */
 
-/* Form styling incomplete */
+
 .form-main {
     display: flex;
     justify-content: center; 
