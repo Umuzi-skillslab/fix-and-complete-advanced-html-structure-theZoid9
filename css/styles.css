@@ -242,8 +242,97 @@ form button {
     
 }
 
+
+/* Root color palette */
+:root {
+    --bg: #F8F9FA;
+    --primary: #1A1A1A;
+    --secondary: #2F2F2F;
+    --accent: #D72638;
+    --accent-alt: #3A86FF;
+    --text: #333333;
+    --text-light: #777777;
+    --bg-secondary: #ECECEC;
+}
+
+/* Homepage */
+.hero {
+    color: var(--primary);
+}
+
+.hero h2 {
+    color: var(--accent);
+}
+
+.hero p {
+    color: var(--text-light);
+}
+
+.content {
+    color: var(--text);
+}
+
+.content h2 {
+    color: var(--primary);
+}
+
+.content p {
+    color: var(--text-light);
+}
+
+/* Team Section */
+.team-section {
+    background-color: var(--bg-secondary);
+    color: var(--text);
+}
+
+/* Service Section */
+.service-section {
+    background-color: var(--bg);
+}
+
+.service-section article {
+    background-color: var(--secondary);
+    color: var(--text);
+}
+
+.video-section h3,
+.audio-section h3,
+.img-section h3 {
+    color: var(--accent);
+}
+
+.video-section p,
+.audio-section p,
+.img-section p {
+    color: var(--text-light);
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    background-color: var(--bg);
+}
+
+.portfolio-grid h2 {
+    color: var(--accent);
+}
+
+/* Client Section */
+.client figcaption {
+    color: var(--text);
+}
+
 /* Missing: responsive design with media queries */
 /* Missing: advanced layout techniques */
 /* Code quality issues: poor naming, no comments, inconsistent spacing */
 /* Only using 3 selector types (element, class) - needs 5+ */
 /* No pseudo-classes used - needs 5+ */
+
+.video-showcase {
+   background-color: var(--bg-secondary);
+}
+
+.video-showcase  h2{
+    color: #000000;
+
+}
