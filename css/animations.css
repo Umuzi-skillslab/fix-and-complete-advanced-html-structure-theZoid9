@@ -53,13 +53,15 @@ button:hover {
 .hero h2,
 .content h2 {
     animation: float 3s ease-in-out infinite;
+
 }
+
 
 .video-section h3,
 .audio-section h3,
 .img-section h3,
 .audio-sample h2 {
-    animation: float 3s ease-in-out infinite;
+    animation: float 5s ease-in-out infinite;
 }
 
 
