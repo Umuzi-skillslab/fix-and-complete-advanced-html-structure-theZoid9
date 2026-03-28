@@ -18,7 +18,7 @@
 }
 
 
-/*transition animations*/
+/*transition animations**/
 .portfolio-grid img {
     transition: transform 1.0s ease;
 }
