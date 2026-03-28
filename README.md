@@ -77,4 +77,4 @@ Ensured responsive behavior works consistently across devices and screen sizes.
 
 ## Reflection
 
-This project helped me better understand how to structure a complete, production-level website using semantic HTML, Flexbox, and CSS Grid. I improved my ability to build responsive layouts and learned how to organize CSS in a more scalable and maintainable way.
+This project helped me better understand how to structure a complete, production-level website using semantic HTML, Flexbox, and CSS Grid. I improved my ability to build responsive layouts and learned how to organize CSS in a more scalable and maintainable way...
