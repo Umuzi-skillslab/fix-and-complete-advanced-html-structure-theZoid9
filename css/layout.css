@@ -9,6 +9,10 @@
         flex-direction: column;
     }
 
+    main {
+    flex: 1;
+}
+
     .top {
         padding: 20px;
         display: flex;
