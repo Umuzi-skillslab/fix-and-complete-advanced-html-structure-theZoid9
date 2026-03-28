@@ -38,6 +38,11 @@ html,body {
     font-weight: bold;   
 }
 
+.nav a {
+     font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
 
 .hero {
     background-color: var(--primary);
