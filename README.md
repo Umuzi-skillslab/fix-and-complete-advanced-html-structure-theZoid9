@@ -72,6 +72,7 @@ Ensured responsive behavior works consistently across devices and screen sizes.
 1. Clone the repository:
 
 - git clone  https://github.com/Umuzi-skillslab/fix-and-complete-advanced-html-structure-theZoid9 
+
 2. Navigate to the project folder
 
 ## Reflection
