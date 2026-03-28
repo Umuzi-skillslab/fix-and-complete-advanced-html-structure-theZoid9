@@ -8,7 +8,6 @@
 }
 
 
-
 /*Hover animations*/
 .service-section article:hover,
 .portfolio-grid img:hover {
@@ -131,7 +130,7 @@ button:hover {
 .video-showcase h2{
     opacity: 0;
     transform: translateY(30px);
-    animation: fadeSlideUp 2s ease forwards;
+    animation: fadeSlideUp 1s ease forwards;
     animation-delay: 0.02s; 
 }
 /* Keyframes */
