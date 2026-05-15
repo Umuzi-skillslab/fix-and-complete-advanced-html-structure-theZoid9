@@ -175,8 +175,8 @@
 /* Grid container */
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    grid-template-rows: repeat(2, auto); 
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
 }
 
@@ -356,19 +356,19 @@
 
     
     legend {
-        display: block;
-        width: 100%;
-        text-align: center;
-        font-size: 1.5rem;
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
 
-    form fieldset {
-        border: none;
-        width: 100%;
-        padding: 0;
-        margin: 0;
+    fieldset {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        gap: 15px;
+        padding: 20px;
     }
 
     label {
@@ -407,6 +407,7 @@
 
     form button {
         padding: 0.7rem 1.5rem;
+        margin-top: 1rem;
     }
 
     .bottom {
