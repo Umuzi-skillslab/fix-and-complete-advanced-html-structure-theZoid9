@@ -181,6 +181,18 @@ form {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
 }
 
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid dodgerblue;
+}
+
+.radio-options label:first-child {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+
 .form-heading {
         display: flex;
         justify-content: center;
@@ -200,6 +212,14 @@ form button {
     border-radius: 4px;
     background-color: #3f3f3f;
     color: white;
+}
+
+.input:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.input:first-child {
+    margin-top: 10px;
 }
 
 .bottom {
