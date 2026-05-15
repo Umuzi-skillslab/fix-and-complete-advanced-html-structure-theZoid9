@@ -26,39 +26,67 @@
     <main class="form-main">
         <form action="#" method="POST">
             <fieldset>
-            <div class="form-heading">
-                <h2>Get In Touch</h2>
-             </div>            
-                 <div class="input">
+                <legend>Get In Touch</legend>
+
+                <div class="input">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="Your Name"
+                        required
+                        minlength="3"
+                        maxlength="50"
+                        pattern="[A-Za-z\s]+"
+                    >
                 </div>
 
                 <div class="input">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="your@email.com"
+                        required
+                    >
                 </div>
 
                 <div class="input">
                     <label for="phone">Phone</label>
-                    <input type="tel" id="phone" name="phone" placeholder="08212345678">
+                    <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        placeholder="08212345678"
+                        pattern="[0-9]{10,15}"
+                        minlength="10"
+                        maxlength="15"
+                    >
                 </div>
 
                 <div class="gender-input">
                     <label>Gender</label>
                     <div class="radio-options">
-                        <label>
-                            <input type="radio" name="gender" value="male"> Male
-                        </label>
-                        <label>
-                            <input type="radio" name="gender" value="female"> Female
-                        </label>
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <label><input type="radio" name="gender" value="other"> Other</label>
                     </div>
                 </div>
 
+                <!-- Checkboxes -->
+                <div class="checkbox-input">
+                    <label>Interests</label>
+                    <label><input type="checkbox" name="interest" value="video"> Video</label>
+                    <label><input type="checkbox" name="interest" value="audio"> Audio</label>
+                    <label><input type="checkbox" name="interest" value="editing"> Editing</label>
+                </div>
+
+                <!-- Select -->
                 <div class="service-input">
                     <label for="service">Service</label>
-                    <select id="service" name="service">
+                    <select id="service" name="service" required>
                         <option value="">Select a service</option>
                         <option value="video">Video Production</option>
                         <option value="audio">Audio Recording</option>
@@ -66,13 +94,55 @@
                     </select>
                 </div>
 
+                <!-- Date input -->
+                <div class="input">
+                    <label for="date">Preferred Date</label>
+                    <input 
+                        type="date" 
+                        id="date" 
+                        name="date"
+                        min="2025-01-01"
+                        max="2030-12-31"
+                    >
+                </div>
+
+                <!-- Number input -->
+                <div class="input">
+                    <label for="budget">Budget (R)</label>
+                    <input 
+                        type="number" 
+                        id="budget" 
+                        name="budget"
+                        min="0"
+                        max="100000"
+                        step="100"
+                    >
+                </div>
+
+                <!-- URL input -->
+                <div class="input">
+                    <label for="website">Website</label>
+                    <input 
+                        type="url" 
+                        id="website" 
+                        name="website"
+                        placeholder="https://example.com"
+                    >
+                </div>
+
+                <!-- Message -->
                 <div class="message-input">
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Your message here..."></textarea>
+                    <textarea 
+                        id="message" 
+                        name="message"
+                        minlength="10"
+                        maxlength="300"
+                        required
+                    ></textarea>
                 </div>
 
             </fieldset>
-
 
             <button type="submit">Submit</button>
         </form>
