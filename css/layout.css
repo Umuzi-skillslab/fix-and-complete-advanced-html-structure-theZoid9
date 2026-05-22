@@ -335,9 +335,11 @@
 /* contact.html **/
     .form-main {
         display: flex;
-        justify-content: center; 
+        justify-content: center;  
+        gap: 2rem;
         padding: 2rem;
-    }
+        align-items: flex-start;
+}
    
  
 
@@ -346,6 +348,8 @@
         flex-direction: column;
         margin-bottom: 1rem;  
     }
+
+
 
     form {
         display: flex;
