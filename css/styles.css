@@ -215,6 +215,48 @@ form button {
     color: white;
 }
 
+
+/* Form validation states */
+form input:valid,
+form textarea:valid,
+form select:valid {
+    border: 2px solid rgb(18, 117, 18);
+}
+
+form input:invalid,
+form textarea:invalid,
+form select:invalid {
+    border: 2px solid rgb(187, 0, 0);
+}
+
+/* Focus styles for accessibility */
+form input:focus,
+form textarea:focus,
+form select:focus {
+    outline: 3px solid #555;
+    outline-offset: 2px;
+}
+
+/* Focus-visible for keyboard users */
+form input:focus-visible,
+form textarea:focus-visible,
+form select:focus-visible,
+form button:focus-visible {
+    outline: 3px solid #000;
+    outline-offset: 3px;
+}
+
+/* Active button state */
+form button:active {
+    transform: scale(0.98);
+}
+
+
+/* Optional hover effect */
+form button:hover {
+    opacity: 0.9;
+}
+
 .input:not(:last-child) {
     margin-bottom: 15px;
 }

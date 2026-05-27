@@ -38,7 +38,7 @@
                         name="name" 
                         placeholder="Your Name"
                         required
-                        minlength="3"
+                        minlength="1"
                         maxlength="50"
                         pattern="[A-Za-z\s]+"
                         title="Name should only contain letters and spaces"
@@ -67,12 +67,13 @@
                         minlength="10"
                         maxlength="15"
                         title="Phone number must be 10 to 15 digits"
+                        required
                     >
                 </div>
 
-                <div class="gender-input">
+                <div class="gender-input" >
                     <label>Gender</label>
-                    <div class="radio-options">
+                    <div class="radio-options" >
                         <label><input type="radio" name="gender" value="male"> Male</label>
                         <label><input type="radio" name="gender" value="female"> Female</label>
                         <label><input type="radio" name="gender" value="other"> Other</label>
@@ -81,7 +82,7 @@
 
                 <!-- Checkboxes -->
                 <div class="checkbox-input">
-                    <label>Interests</label>
+                    <label >Interests</label>
                     <label><input type="checkbox" name="interest" value="video"> Video</label>
                     <label><input type="checkbox" name="interest" value="audio"> Audio</label>
                     <label><input type="checkbox" name="interest" value="editing"> Editing</label>
@@ -107,6 +108,7 @@
                         name="date"
                         min="2025-01-01"
                         max="2030-12-31"
+                        required
                     >
                 </div>
 
@@ -120,6 +122,7 @@
                         min="0"
                         max="100000"
                         step="100"
+                        required
                     >
                 </div>
 
@@ -131,6 +134,7 @@
                         id="website" 
                         name="website"
                         placeholder="https://example.com"
+                         required
                     >
                 </div>
 
