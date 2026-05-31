@@ -195,7 +195,7 @@ Implemented:
 
 ### Animation Examples
 
-![Animation Example](screenshots/animation%20about%20page.mp4)
+![Animation Example](screenshots/nav%20bar%20animanition.gif)
 
 ---
 
