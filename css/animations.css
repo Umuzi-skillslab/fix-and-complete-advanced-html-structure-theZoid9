@@ -1,61 +1,102 @@
+/* =========================
+   NAV ANIMATION
+========================= */
 
-
-/* nav animation */
-
-
-.nav a:hover{
+.nav a:hover {
     color: black;
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
+/* =========================
+   HOVER ANIMATIONS
+========================= */
 
-/*Hover animations*/
+/* FIXED: unified hover system (no conflicting transforms) */
 .service-section article:hover,
 .portfolio-grid img:hover {
     transform: translateY(-5px);
-    transition: 0.3s ease;
     box-shadow: 0 28px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-/*transition animations**/
+/* Portfolio image transition */
 .portfolio-grid img {
-    transition: transform 1.0s ease;
+    transition: transform 0.6s ease;
 }
 
-.service-section article {
-    transition: transform 1.5s ease;
-}
-
+/* IMPORTANT FIX: removed conflicting scale(1.4) */
 .service-section article:hover {
-    transform: scale(1.4);
+    transform: translateY(-5px) scale(1.03);
 }
 
+/* Portfolio hover */
 .portfolio-grid img:hover {
-    transform: scale(1.3);
+    transform: scale(1.05);
 }
 
-
+/* Client hover */
 .client figure:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 15px rgba(0,0,0,0.1);
     border-color: #ccc;
 }
 
+/* Button hover */
 button:hover {
-    background-color: #a61b2a; 
+    background-color: #a61b2a;
     transform: scale(1.05);
+    transition: all 0.3s ease;
 }
 
+/* =========================
+   SERVICE CARD FIX (ADDED)
+========================= */
 
+.service-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-/*bounce animations*/
+/* video background */
+.service-card video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* dark overlay */
+.service-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+/* text layer fix */
+.service-card .content {
+    position: relative;
+    z-index: 2;
+}
+
+/* hover effect */
+.service-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================
+   FLOAT ANIMATIONS
+========================= */
+
 .hero h2,
 .content h2 {
     animation: float 3s ease-in-out infinite;
-
 }
-
 
 .video-section h3,
 .audio-section h3,
@@ -64,15 +105,15 @@ button:hover {
     animation: float 5s ease-in-out infinite;
 }
 
-
+/* =========================
+   HAT BOUNCE
+========================= */
 
 .hat {
     height: 100px;
     animation: hatBounce 1s ease-out forwards;
     opacity: 0;
 }
-
-
 
 @keyframes hatBounce {
     0% {
@@ -88,69 +129,77 @@ button:hover {
     }
     100% {
         transform: translateY(0) scale(1) rotate(0deg);
-          opacity: 1;
+        opacity: 1;
     }
 }
-/*fadeSlideUp animations*/
+
+/* =========================
+   FADE SLIDE UP
+========================= */
 
 .location h2 {
     opacity: 0;
     transform: translateY(30px);
     animation: fadeSlideUp 2s ease forwards;
-    animation-delay: 0.7s; 
+    animation-delay: 0.7s;
 }
 
-.top h1{
+.top h1 {
     opacity: 0;
     transform: translateY(30px);
     animation: fadeSlideUp 2s ease forwards;
-    animation-delay: 0.5s;  
+    animation-delay: 0.5s;
 }
 
 .team-section h2 {
     opacity: 0;
     transform: translateY(30px);
     animation: fadeSlideUp 1s ease forwards;
-    animation-delay: 0.1s;  
+    animation-delay: 0.1s;
 }
 
 .service-section h2 {
     opacity: 0;
     transform: translateY(30px);
     animation: fadeSlideUp 2s ease forwards;
-    animation-delay: 0.9s;  
+    animation-delay: 0.9s;
 }
 
 .portfolio-section h2 {
     opacity: 0;
     transform: translateY(30px);
     animation: fadeSlideUp 2s ease forwards;
-    animation-delay: 1.0s; 
+    animation-delay: 1s;
 }
 
+.video-showcase h2 {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlideUp 1s ease forwards;
+    animation-delay: 0.02s;
+}
+
+/* even offset */
 .portfolio-grid figure:nth-child(even) {
     transform: translateY(10px);
 }
 
-.video-showcase h2{
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeSlideUp 1s ease forwards;
-    animation-delay: 0.02s; 
+/* =========================
+   KEYFRAMES
+========================= */
+
+@keyframes fadeSlideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-/* Keyframes */
 
-    @keyframes fadeSlideUp {
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
     }
-
-    /* bounce animation key */
-    @keyframes float {
-        0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-5px); }
+    50% {
+        transform: translateY(-5px);
     }
-
-
+}
