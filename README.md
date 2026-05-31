@@ -250,7 +250,6 @@ Measures taken:
 
 * Verified semantic HTML structure.
 * Checked for missing tags and nesting issues.
-tyuu
 
 ![HTML Validation](screenshots/form%20validation.png)
 
