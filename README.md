@@ -129,7 +129,7 @@ Implemented HTML validation using:
 * Added responsive breakpoints.
 * Ensured compatibility across desktop, tablet, and mobile devices.
 
----
+--fgfgfg-
 
 ## Flexbox Usage
 
@@ -143,7 +143,7 @@ Flexbox was used to:
 
 ### Example Layout
 
-![Flexbox Layout](images/flexbox-layout.png)
+![Flexbox Layout](screenshots/flexbox%20layout.png)
 
 ---
 
@@ -161,7 +161,7 @@ CSS Grid was used to:
 
 ### Example Layout
 
-![Grid Layout](images/grid-layout.png)
+![Grid Layout](screenshots/Grid%20layout.png)
 
 ---
 
@@ -195,7 +195,7 @@ Implemented:
 
 ### Animation Examples
 
-![Animation Example](images/animations.gif)
+![Animation Example](screenshots/animation%20about%20page.mp4)
 
 ---
 
