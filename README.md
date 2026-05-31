@@ -129,7 +129,7 @@ Implemented HTML validation using:
 * Added responsive breakpoints.
 * Ensured compatibility across desktop, tablet, and mobile devices.
 
---fgfgfg-
+---
 
 ## Flexbox Usage
 
