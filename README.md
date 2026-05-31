@@ -161,7 +161,7 @@ CSS Grid was used to:
 
 ### Example Layout
 
-![Grid Layout](screenshots/Grid%20layout.png)
+![Grid Layout](screenshots/grid.png)
 
 ---
 
@@ -250,6 +250,9 @@ Measures taken:
 
 * Verified semantic HTML structure.
 * Checked for missing tags and nesting issues.
+
+
+![HTML Validation](screenshots/form%20validation.png)
 
 ### CSS Validation
 
