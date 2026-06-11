@@ -1,171 +1,200 @@
-/* general layout */
-    html, body {
-        height: 100%;
-        margin: 0;
-    }
+/* ==================================================
+   PAGE STRUCTURE
+   Creates a full-height layout and allows the footer
+   to stay at the bottom when content is short.
+================================================== */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
 
-    body {
-        display: flex;
-        flex-direction: column;
-    }
+body {
+    display: flex;
+    flex-direction: column;
+}
 
-    main {
+/* Expands to fill available space between header and footer */
+main {
     flex: 1;
 }
 
-    .top {
-        padding: 20px;
-        display: flex;
-        gap: 20px;
-        justify-content: center;
-    }
+/* ==================================================
+   HEADER
+   Aligns the logo and company title horizontally
+   and centers them within the page.
+================================================== */
+.top {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
 
-    .top h1 {
-        display: flex;
-        justify-content: center;
-        margin: 0;
-        align-items: center;
-        padding: 10px;
-        border:2px solid rgb(116, 116, 116);
-    }
+/* Company title styling */
+.top h1 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid rgb(116, 116, 116);
+}
 
-    .top img{
-        padding: 2px;
-        width: 80px;
-       
+/* Controls logo size and spacing */
+.top img {
+    padding: 2px;
+    width: 80px;
+}
 
-    }
-    
+/* ==================================================
+   NAVIGATION
+   Displays menu items in a horizontal layout and
+   provides spacing between links.
+================================================== */
+.nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
 
-    .nav ul{
-        display: flex;
-        justify-content: center;
-        padding: 20px;
-    }
+.nav a {
+    margin: 0 10px;
+}
 
-    .nav a{
-        margin: 0 10px;
-    }
+/* ==================================================
+   HOMEPAGE LAYOUT
+   Splits the page into hero and content sections
+   using a flexible vertical layout.
+================================================== */
+.homepage {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
-/**** Main homepage(index.html) Layout ****/
-    .homepage {
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
+/* Main banner section used to capture attention */
+.hero {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 15px;
+    margin: 0;
+}
 
-    .hero {
-        flex: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;    
-        align-items: center;          
-        text-align: center;
-        padding: 10px 15px;
-        margin: 0;
-    }
+/* Supporting content section below the hero */
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
 
-    .content {
-        flex: 1;                    
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 10px;
-    }
+/* ==================================================
+   ABOUT PAGE
+   Team and portfolio presentation styles.
+================================================== */
 
+/* Prevents portfolio images from becoming too large */
+.portfolio-grid img {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
-/*****  about.html Layout ********/
+/* Centers team information over the banner area */
+.team-section {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
-    .portfolio-grid img {
-        max-width: 250px; 
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
+/* Improves readability by limiting line length */
+.team-section article {
+    max-width: 600px;
+}
 
+/* ==================================================
+   SERVICES SECTION
+   Displays service offerings in a responsive grid.
+================================================== */
+.service-section {
+    display: grid;
+    grid-auto-rows: auto;
+    gap: 20px;
+    padding: 60px 20px;
+    justify-items: center;
+}
 
-    .team-section {
-        padding: 60px 20px;
-        display: flex;
-        justify-content: center;  
-        align-items: center;     
-        text-align: center;
-    }
+.service {
+    display: grid;
+    place-items: center;
+}
 
-    .team-section article {
-        max-width: 600px;  
-    }
+/* ==================================================
+   SERVICE CARDS
+   Creates a container for media backgrounds and
+   overlayed content.
+================================================== */
+.service-card {
+    display: grid;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 0;
+    padding: 30px;
+    text-align: center;
+}
 
+/* Makes background videos cover the entire card */
+.service-card video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
 
-/*Service Section */
+/* Centers content within media service cards */
+.video-section,
+.audio-section,
+.img-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
 
-
-    .service-section {
-        display: grid;
-        grid-auto-rows: auto;
-        gap: 20px;
-        padding: 60px 20px;
-        justify-items: center;
-    }
-
-    .service {
-        display: grid;
-        place-items: center;
-    }
-
-/* Cards THE BRAIN OF BACKGROUND*/
-    .service-card {
-        display: grid;
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        border-radius: 0;
-        padding: 30px;
-        text-align: center;
-    }
-/* Video background THE BRAIN OF BACKGROUND**/
-    .service-card video {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: 0;
-    }
-
-
-    .video-section,
-    .audio-section,
-    .img-section {
-        display: flex;
-        flex-direction: column;   
-        justify-content: center;  
-        align-items: center;  
-        text-align: center;       
-        padding: 20px;
-    }
-
-
-
-
-/* Portfolio Grid */
-/* Portfolio Section */
+/* ==================================================
+   PORTFOLIO SECTION
+   Responsive grid used to showcase projects.
+================================================== */
 .portfolio-section {
     padding: 3rem 2rem;
     text-align: center;
 }
 
-/* Grid container */
+/* Automatically adjusts number of columns
+   based on available screen width */
 .portfolio-grid {
     display: grid;
     grid-template-columns:
         repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
 }
-
 
 .portfolio-grid h2 {
     text-align: center;
@@ -178,235 +207,259 @@
     border-radius: 8px;
 }
 
-
-/* Mobile */
+/* Single-column layout for smaller screens */
 @media (max-width: 600px) {
     .portfolio-grid {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
     }
 }
 
-/* Media.HTML*/
-/* Video & Audio Sections AND LOCATION + CLIENTS*/
-
-    section {
-        padding: 20px;
-        margin: 20px 0;
-        border-radius: 8px;
-    }
-
-    section h2 {
-        font-size: 1.8rem;
-        margin-bottom: 15px;
-        text-align: center;
-    }
-
-/* Video section*/
-    .video-showcase {
-        text-align: center;
-        padding: 20px 0;
-    }
-
-    .video-showcase h2 {
-        margin-bottom: 20px;
-    }
-
-    .video-showcase video {
-        display: inline-block; 
-        width: 45%;          
-        margin: 0 10px;        
-        height: auto;
-        border-radius: 5px;
-    }
-
-/* Audio section*/
-    .audio-sample {
-        display: block;
-        text-align: center;     
-        padding: 20px 0;
-        background-color: #555;
-    }
-
-    .audio-sample h2 {
-        margin-bottom: 20px;
-        color: #ffffff;
-        
-    }
-
-    .audio-sample audio {
-        display: block;           
-        margin: 0 auto 10px;     
-        width: 60%;               
-        max-width: 500px;         
-    }
-
-    .audio-sample p {
-        margin: 0;              
-        font-size: 1rem;
-        color: #e0e0e0;
-    }
-
-/*location*/
-
-    .location h2 {
-        text-align: center;
-        font-size: 2.2rem;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        margin-bottom: 20px;
-        color: #222;
-    }
-
-    .location {
-        padding: 20px 0;
-    }
-
-    .location iframe {
-        width: 100vw; 
-        height: 200px;
-        border: 0;
-        display: block;
-    }
-
-
-    .location p {
-        text-align: center;
-        margin-top: 10px;
-        color: #555;
-    }
-    
-/* General section styling */
-
-        .client article {
-            display: flex;
-            flex-wrap: wrap;           
-            flex-direction: row;      
-            justify-content: center;  
-            gap: 2rem;                
-            max-width: 1000px;        
-            margin: 0 auto;            
-        }
-
-
-        .client h2 {
-            flex: 0 0 100%; 
-            text-align: center;
-            margin-bottom: 1rem;
-            position: relative;
-        }
-
-        .client figure {
-            padding: 2rem;
-            width: 300px; 
-            text-align: center;
-            margin: 0; 
-        }
-
- 
-        .client img {
-            width: 100px;
-            height: 100px;
-            object-fit: cover;  
-            margin-bottom: 1rem;
-        }
-
-        @media (max-width: 600px) {
-            .client figure {
-                width: 100%; 
-            }
-        }
-
-/* contact.html **/
-    .form-main {
-        display: flex;
-        justify-content: center;  
-        gap: 2rem;
-        padding: 2rem;
-        align-items: flex-start;
+/* ==================================================
+   SHARED SECTION STYLING
+   Provides consistent spacing for major sections.
+================================================== */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
 }
-   
- 
 
-    .input, .gender-input, .message-input, .service-input {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1rem;  
-    }
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
 
+/* ==================================================
+   VIDEO SHOWCASE
+   Displays multiple videos side by side.
+================================================== */
+.video-showcase {
+    text-align: center;
+    padding: 20px 0;
+}
 
+.video-showcase h2 {
+    margin-bottom: 20px;
+}
 
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        max-width: 500px;  
-        width: 100%;            
-    }
+.video-showcase video {
+    display: inline-block;
+    width: 45%;
+    margin: 0 10px;
+    height: auto;
+    border-radius: 5px;
+}
 
-    
-    legend {
-            display: block;
-            width: 100%;
-            text-align: center;
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
+/* ==================================================
+   AUDIO SHOWCASE
+   Provides a dedicated area for audio samples.
+================================================== */
+.audio-sample {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #555;
+}
 
-    fieldset {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 15px;
-        padding: 20px;
-    }
+.audio-sample h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
 
-    label {
-        margin-bottom: 1rem;
-        font-weight: 500;
-    }
+.audio-sample audio {
+    display: block;
+    margin: 0 auto 10px;
+    width: 60%;
+    max-width: 500px;
+}
 
-    form div {
-        margin-bottom: 1rem;
-    }
+.audio-sample p {
+    margin: 0;
+    font-size: 1rem;
+    color: #e0e0e0;
+}
 
-    .radio-options {
-        display: flex;
-        gap: 1rem;
-        align-items: center;
-    }
-    .radio-options input[type="radio"] {
-        margin:0; 
-    }
+/* ==================================================
+   LOCATION SECTION
+   Displays business location and embedded map.
+================================================== */
+.location {
+    padding: 20px 0;
+}
 
-    textarea {
-    min-height: 60px;
-    resize: vertical;
-    }
+.location h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #222;
+}
 
-    form input, form textarea {
-        padding: 0.5rem;
-    }
+/* Full-width embedded map */
+.location iframe {
+    width: 100vw;
+    height: 200px;
+    border: 0;
+    display: block;
+}
 
-    form input[type="text"],
-    form input[type="email"],
-    form input[type="tel"],
-    form textarea {
+.location p {
+    text-align: center;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* ==================================================
+   CLIENT TESTIMONIALS
+   Displays client feedback in responsive cards.
+================================================== */
+.client article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Forces heading onto its own row */
+.client h2 {
+    flex: 0 0 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.client figure {
+    padding: 2rem;
+    width: 300px;
+    text-align: center;
+    margin: 0;
+}
+
+/* Circular client profile images */
+.client img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+/* Stack testimonial cards on smaller screens */
+@media (max-width: 600px) {
+    .client figure {
         width: 100%;
     }
+}
 
-    form button {
-        padding: 0.7rem 1.5rem;
-        margin-top: 1rem;
-    }
+/* ==================================================
+   CONTACT PAGE
+   Layout and styling for the contact form.
+================================================== */
+.form-main {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: flex-start;
+}
 
+/* Consistent spacing for form controls */
+.input,
+.gender-input,
+.message-input,
+.service-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
 
+/* Centers the form and limits maximum width */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+}
 
-    footer > div.bottom {
+/* Form title styling */
+legend {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Responsive form field layout */
+fieldset {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+label {
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+form div {
+    margin-bottom: 1rem;
+}
+
+/* Aligns radio buttons horizontally */
+.radio-options {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.radio-options input[type="radio"] {
+    margin: 0;
+}
+
+/* Allows users to resize message field vertically */
+textarea {
+    min-height: 60px;
+    resize: vertical;
+}
+
+form input,
+form textarea {
+    padding: 0.5rem;
+}
+
+/* Makes text-based inputs span full width */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+}
+
+/* Submit button spacing */
+form button {
+    padding: 0.7rem 1.5rem;
+    margin-top: 1rem;
+}
+
+/* ==================================================
+   FOOTER
+   Simple centered footer content.
+================================================== */
+footer > div.bottom {
     text-align: center;
     padding: 55px;
 }
 
-    .bottom p{
-        margin: 0 10px;
-        padding: 10px;
-    }
+.bottom p {
+    margin: 0 10px;
+    padding: 10px;
+}

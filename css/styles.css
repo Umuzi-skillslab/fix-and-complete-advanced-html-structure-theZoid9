@@ -1,3 +1,8 @@
+/* ==================================================
+   GLOBAL DESIGN TOKENS
+   Centralized color palette used throughout the site.
+   Update these values to change the theme consistently.
+================================================== */
 :root {
     --bg: #F8F9FA;
     --primary: #1A1A1A;
@@ -9,20 +14,35 @@
     --bg-secondary: #ECECEC;
 }
 
+/* ==================================================
+   CSS RESET
+   Removes browser default spacing and ensures
+   consistent sizing calculations across elements.
+================================================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body {
+/* ==================================================
+   PAGE DEFAULTS
+   Sets the site's font, colors, and ensures the
+   page always fills the viewport height.
+================================================== */
+html,
+body {
     font-family: Arial, sans-serif;
     background-color: var(--bg);
     color: var(--text);
     height: 100%;
 }
 
-/* Layout base */
+/* ==================================================
+   PAGE LAYOUT
+   Creates a sticky footer layout where the main
+   content expands to fill available space.
+================================================== */
 body {
     display: flex;
     flex-direction: column;
@@ -32,7 +52,11 @@ main {
     flex: 1;
 }
 
-/* HEADER / NAV */
+/* ==================================================
+   SITE HEADER & NAVIGATION
+   Styles the top navigation area and interactive
+   menu links.
+================================================== */
 .top {
     background-color: var(--primary);
     color: white;
@@ -50,11 +74,16 @@ main {
     transition: color 0.3s ease;
 }
 
+/* Visual feedback when users hover over links */
 .nav a:hover {
     color: black;
 }
 
-/* HERO */
+/* ==================================================
+   HERO SECTION
+   Large banner area used to introduce the page
+   with a background image and highlighted text.
+================================================== */
 .hero {
     background-image: url("/images/bannerHomePage.jpg");
     background-size: cover;
@@ -64,15 +93,21 @@ main {
     color: white;
 }
 
+/* Highlight heading using the brand accent color */
 .hero h2 {
     color: var(--accent);
 }
 
+/* Softer paragraph color for visual hierarchy */
 .hero p {
     color: #ccc;
 }
 
-/* CONTENT */
+/* ==================================================
+   MAIN CONTENT AREA
+   Provides spacing and readability for general
+   page content sections.
+================================================== */
 .content {
     padding: 40px 20px;
     border-radius: 8px;
@@ -82,12 +117,16 @@ main {
     color: var(--primary);
 }
 
+/* Secondary text color improves readability */
 .content p {
-  
     color: var(--text-light);
 }
 
-/* TEAM */
+/* ==================================================
+   TEAM SECTION
+   Uses a background image to visually separate
+   the team information from the rest of the page.
+================================================== */
 .team-section {
     background-image: url("/images/bannerAboutPage.jpg");
     background-size: cover;
@@ -96,13 +135,15 @@ main {
     color: white;
 }
 
-
-
 .team-section h2 {
     color: var(--accent);
 }
 
-/* SERVICE CARD OVERLAY */
+/* ==================================================
+   SERVICE CARD OVERLAY
+   Adds a dark layer over background images so
+   text remains readable regardless of image colors.
+================================================== */
 .service-card::before {
     content: "";
     position: absolute;
@@ -111,28 +152,37 @@ main {
     z-index: 0;
 }
 
-/* TEXT */
+/* ==================================================
+   SERVICE CARD TYPOGRAPHY
+   Controls readability and visual hierarchy of
+   service card content.
+================================================== */
 .service-card h3 {
     font-size: 1.5rem;
-    
 }
-
-
 
 .service-card p {
     font-size: 1rem;
     opacity: 0.9;
 }
 
-/* MEDIA TEXT */
+/* ==================================================
+   MEDIA SECTION HEADINGS
+   Applies consistent branding and improves
+   visibility against media backgrounds.
+================================================== */
 .video-section h3,
 .audio-section h3,
 .img-section h3 {
     color: var(--accent);
-    text-shadow: 0 2px 6px rgba(0,0,0,0.8);
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
 }
 
-/* CLIENT */
+/* ==================================================
+   CLIENT TESTIMONIALS / SHOWCASE
+   Creates card-like presentation for client
+   information and feedback.
+================================================== */
 .client {
     padding: 4rem 2rem;
     background-color: #f4f6f8;
@@ -143,33 +193,41 @@ main {
     font-size: 2rem;
 }
 
+/* Card styling for client profiles or testimonials */
 .client figure {
     background: #fff;
     border: 1px solid #e0e0e0;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Circular profile images */
 .client img {
     border-radius: 50%;
     border: 3px solid #fff;
 }
 
-/* FORM BASE */
+/* ==================================================
+   FORM STYLING
+   Creates a clean, card-like appearance for
+   user input forms.
+================================================== */
 form {
     background-color: #f9f9f9;
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Shared styling for form fields */
 form input,
 form textarea {
     border: 1px solid #000;
     border-radius: 4px;
 }
 
+/* Primary call-to-action button */
 form button {
     border: none;
     border-radius: 4px;
@@ -178,7 +236,11 @@ form button {
     transition: all 0.3s ease;
 }
 
-/* VALIDATION */
+/* ==================================================
+   FORM VALIDATION FEEDBACK
+   Provides immediate visual indication of whether
+   user input is valid or invalid.
+================================================== */
 form input:valid,
 form textarea:valid,
 form select:valid {
@@ -191,15 +253,21 @@ form select:invalid {
     border: 2px solid red;
 }
 
+/* Small press animation when button is clicked */
 form button:active {
     transform: scale(0.98);
 }
 
+/* Hover effect for better interactivity */
 form button:hover {
     opacity: 0.9;
 }
 
-/* FOOTER */
+/* ==================================================
+   FOOTER
+   Uses the primary brand color to visually anchor
+   the bottom of the page.
+================================================== */
 .bottom {
     background-color: var(--primary);
     color: white;
