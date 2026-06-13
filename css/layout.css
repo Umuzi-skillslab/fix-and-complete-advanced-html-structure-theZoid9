@@ -2,22 +2,9 @@
    PAGE STRUCTURE
    Creates a full-height layout and allows the footer
    to stay at the bottom when content is short.
+   Note: body flex and main flex are defined in
+   styles.css to avoid duplication.
 ================================================== */
-html,
-body {
-    height: 100%;
-    margin: 0;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Expands to fill available space between header and footer */
-main {
-    flex: 1;
-}
 
 /* ==================================================
    HEADER
@@ -421,8 +408,10 @@ form div {
     align-items: center;
 }
 
+/* Attribute selector for radio button accent color */
 .radio-options input[type="radio"] {
     margin: 0;
+    accent-color: var(--accent);
 }
 
 /* Allows users to resize message field vertically */

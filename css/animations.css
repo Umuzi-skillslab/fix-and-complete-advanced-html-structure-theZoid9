@@ -1,55 +1,38 @@
 /* =========================
-   NAV ANIMATION
-========================= */
-
-.nav a:hover {
-    color: black;
-    text-decoration: underline;
-}
-
-/* =========================
    HOVER ANIMATIONS
+   Unified hover effects for
+   interactive elements across
+   the site.
 ========================= */
 
-/* FIXED: unified hover system (no conflicting transforms) */
-.service-section article:hover,
-.portfolio-grid img:hover {
-    transform: translateY(-5px);
+/* Service cards lift on hover */
+.service-section article:hover {
+    transform: translateY(-5px) scale(1.03);
     box-shadow: 0 28px 20px rgba(0,0,0,0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Portfolio image transition */
+/* Portfolio image hover — smooth scale effect */
 .portfolio-grid img {
     transition: transform 0.6s ease;
 }
 
-/* IMPORTANT FIX: removed conflicting scale(1.4) */
-.service-section article:hover {
-    transform: translateY(-5px) scale(1.03);
-}
-
-/* Portfolio hover */
 .portfolio-grid img:hover {
     transform: scale(1.05);
 }
 
-/* Client hover */
+/* Client testimonial cards lift on hover */
 .client figure:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 15px rgba(0,0,0,0.1);
     border-color: #ccc;
 }
 
-/* Button hover */
-button:hover {
-    background-color: #a61b2a;
-    transform: scale(1.05);
-    transition: all 0.3s ease;
-}
-
 /* =========================
-   SERVICE CARD FIX (ADDED)
+   SERVICE CARD ANIMATION
+   Smooth entrance and hover
+   effects for video service
+   cards.
 ========================= */
 
 .service-card {
@@ -58,39 +41,22 @@ button:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* video background */
-.service-card video {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-}
-
-/* dark overlay */
-.service-card::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.55);
-    z-index: 1;
-}
-
-/* text layer fix */
-.service-card .content {
-    position: relative;
-    z-index: 2;
-}
-
-/* hover effect */
+/* Hover effect — card lifts and scales slightly */
 .service-card:hover {
     transform: translateY(-8px) scale(1.03);
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25);
 }
 
+/* Text layer sits above the video and overlay */
+.service-card .content {
+    position: relative;
+    z-index: 2;
+}
+
 /* =========================
    FLOAT ANIMATIONS
+   Subtle floating effect for
+   headings to add visual life.
 ========================= */
 
 .hero h2,
@@ -107,6 +73,9 @@ button:hover {
 
 /* =========================
    HAT BOUNCE
+   Logo entrance animation —
+   bounces in from above with
+   rotation and scale.
 ========================= */
 
 .hat {
@@ -135,6 +104,8 @@ button:hover {
 
 /* =========================
    FADE SLIDE UP
+   Staggered entrance animation
+   for section headings.
 ========================= */
 
 .location h2 {
@@ -179,13 +150,15 @@ button:hover {
     animation-delay: 0.02s;
 }
 
-/* even offset */
+/* Even portfolio items get a slight offset for visual rhythm */
 .portfolio-grid figure:nth-child(even) {
     transform: translateY(10px);
 }
 
 /* =========================
    KEYFRAMES
+   Shared animation keyframes
+   used throughout the site.
 ========================= */
 
 @keyframes fadeSlideUp {
